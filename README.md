@@ -20,7 +20,7 @@ const victor = {
     role: "Freelance Backend Engineer",
     specialties: ["Performance Optimization", "Scaling Systems", "Messaging Automation"],
     currentProjects: ["WASBOT", "Telegram Multi-tenant SaaS"],
-    openSource: ["baileys", "whatmeow"],
+    openSource: ["baileys", "whatsmeow"],
     learning: ["GoLang", "Kubernetes", "PostgreSQL", "AWS"],
     philosophy: "I will win.",
     technologies: {
