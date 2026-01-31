@@ -44,17 +44,17 @@ var prodigy = Engineer{
 
 var stack = map[string][]string{
     "languages": {"Go", "TypeScript", "Python", "JavaScript"},
-    "backend":   {"Node.js", "Express.js", "Fiber", "FastAPI"},
-    "databases": {"PostgreSQL", "MongoDB", "MySQL", "Redis"},
-    "devops":    {"Docker", "Kubernetes", "AWS", "GCP", "Nginx"},
+    "backend":   {"Gin", "Express.js", "Telegraf", "Asynq", "BullMQ"},
+    "databases": {"PostgreSQL", "MySQL", "Redis", "MinIO"},
+    "devops":    {"K3s", "Docker", "Traefik", "GitHub Actions"},
     "messaging": {"WhatsApp API", "Telegram Bot API", "WebSockets"},
 }
 
 var currentFocus = []string{
-    "Performance Optimization",
-    "Distributed Systems",
-    "Messaging Automation",
-    "High-Availability Architecture",
+    "Serverless Pod Architectures",
+    "Multi-tenant SaaS Platforms",
+    "Payment System Integration",
+    "High-Availability Messaging",
 }
 ```
 
@@ -122,39 +122,60 @@ var currentFocus = []string{
 
 ### WASBOT
 
-> WhatsApp automation platform for businesses
+> WhatsApp automation platform with serverless K8s architecture
 
 ```yaml
 url: https://www.wasbot.ng
 status: Production
-stack: [Node.js, TypeScript, MongoDB, Redis, Docker]
+arch: Microservices Monorepo (6 services)
+stack: [Go, TypeScript, PostgreSQL, Redis, K3s, Traefik]
 ```
 
-**Features:**
+**Architecture:**
+- **Serverless WhatsApp Sessions** - Worker pods created on-demand per user
+- **K3s Cluster** - API server with RBAC manages pod lifecycle dynamically
+- **Dual-Server Setup** - App server (K3s) + Data server (PostgreSQL/Redis)
+- **Custom whatsmeow fork** - Enhanced with status recipient support
 
-- Automated contact management and bulk messaging
-- Group administration and status automation
-- Scheduled message delivery with personalization
-- Redis-based queuing with rate limiting
-- Session persistence and recovery
+**Services:**
+- `wasbot-backend` - Go/Gin API + dynamic worker pods
+- `wasbot-frontend` - Next.js 16 dashboard with Better Auth
+- `webhook-router-go` - Multi-currency payment routing (Paystack/Flutterwave)
+- `affiliate-system-go` - Referral tracking with commission payouts
+- `email-service-go` - Transactional emails via SMTP/Resend
+
+**Features:**
+- History sync with MinIO persistence (tier-based limits)
+- Google Contacts OAuth integration
+- Link preview generation for messages
+- Multi-currency: NGN, USD, EUR, GBP, KES, GHS, ZAR
+- Subscription tiers: Trial → Basic → Premium → Enterprise
 
 ---
 
 ### Telegram Multi-tenant SaaS
 
-> Scalable platform for Telegram bot deployment
+> Production-ready platform running 100+ tenant bots in single process
 
 ```yaml
-status: In Development
-stack: [Node.js, PostgreSQL, Redis, Docker, Kubernetes]
+status: Production Ready
+stack: [Node.js, TypeScript, MySQL, Redis, BullMQ, Telegraf]
 ```
 
 **Architecture:**
+- **Bot Orchestrator** - Manages `Map<tenantId, Map<botId, TenantBot>>`
+- **Complete Tenant Isolation** - Composite PKs, tenant_id FKs on all tables
+- **MySQL-First Design** - Persistent state in DB, Redis for ephemeral cache only
+- **Subscription-Aware** - Only runs bots with active subscriptions
 
-- Multi-tenant with database-per-tenant isolation
-- Horizontal scaling for bot instances
-- Webhook distribution and resource quotas
-- Integrated billing and analytics
+**Features:**
+- Auto-accept system with configurable delays
+- Message sequences with rich media + custom buttons
+- Smart trigger router (Button → Command → Text priority)
+- Broadcast system with delivery tracking
+- Variable system: `[name]`, `[user:STAGE]`, tenant variables
+- Admin messaging campaigns with priority levels
+- Payment integration with auto-renewal reminders
 
 ---
 
@@ -203,31 +224,31 @@ WhatsApp Web API for Go
 
 **Backend**
 
+![Gin](https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Fiber](https://img.shields.io/badge/Fiber-00ACD7?style=flat-square&logo=go&logoColor=white)
+![Telegraf](https://img.shields.io/badge/Telegraf-26A5E4?style=flat-square&logo=telegram&logoColor=white)
 
-**Databases**
+**Databases & Storage**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
 
-**DevOps**
+**DevOps & Orchestration**
 
+![K3s](https://img.shields.io/badge/K3s-FFC61C?style=flat-square&logo=k3s&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-**Tools**
+**Tools & Queues**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![BullMQ](https://img.shields.io/badge/BullMQ-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 </div>
 
@@ -251,12 +272,11 @@ WhatsApp Web API for Go
 ## `> learning --current`
 
 ```diff
-+ Advanced Go for high-performance systems
-+ Kubernetes orchestration at scale
-+ Distributed systems architecture
-+ AWS infrastructure & services
-+ PostgreSQL optimization techniques
-+ Advanced caching strategies
++ Advanced distributed systems patterns
++ Event sourcing & CQRS architectures
++ gRPC for inter-service communication
++ Advanced PostgreSQL (partitioning, JSONB)
++ Observability at scale (OpenTelemetry)
 ```
 
 ---
@@ -282,15 +302,15 @@ Not just a statement—a commitment to solving hard problems and building system
 ## `> experience --freelance`
 
 ```
-[+] Built custom backend solutions for diverse clients
-[+] Optimized systems reducing response times by 10x
-[+] Designed architectures handling millions of requests
-[+] Implemented messaging automation at scale
-[+] Migrated monoliths to microservices
-[+] Set up CI/CD and deployment automation
+[+] Built serverless WhatsApp platform with K8s pod-per-session architecture
+[+] Designed multi-tenant Telegram SaaS handling 100+ bots in single process
+[+] Implemented multi-currency payment systems (7 currencies, 2 processors)
+[+] Created microservices monorepo with 6 Go/Node.js services
+[+] Set up K3s clusters with Traefik ingress and automatic TLS
+[+] Built affiliate systems with commission tracking and payouts
 ```
 
-**Focus Areas:** `API Development` `Performance Tuning` `Database Optimization` `Messaging Integration` `Scaling Strategies`
+**Focus Areas:** `Kubernetes` `Multi-tenant SaaS` `Payment Integration` `Messaging Automation` `Microservices`
 
 ---
 
