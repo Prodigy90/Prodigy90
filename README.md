@@ -1,16 +1,10 @@
 ```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                              ║
-║   █████╗ █████╗ █████╗ █████╗ █████╗ █████╗ ████╗  ██╗  ██╗ ████╗   ████╗    ║
-║   ██╔══╝ ██╔═██╗██╔═██╗██╔══╝ ██╔═██╗██╔══╝ ██╔██╗ ██║  ██║██╔═██╗ ██╔═██╗   ║
-║   █████╗ █████╔╝██║ ██║██║    ██║ ██║██║ ██╗████╔╝  ╚████╔╝██║ ██║ ██║ ██║   ║
-║   ██╔══╝ ██╔═██╗██║ ██║██║    ██║ ██║██║ ██║██╔██╗   ╚██╔╝ ╚═██═╝  ██║ ██║   ║
-║   ██║    ██║ ██║█████╔╝█████╗ █████╔╝█████╔╝██║ ██╗   ██║   ████╗  ████╔╝    ║
-║   ╚═╝    ╚═╝ ╚═╝╚════╝ ╚════╝ ╚════╝ ╚════╝ ╚═╝ ╚═╝   ╚═╝   ╚═══╝  ╚═══╝     ║
-║                                                                              ║
-║                    Victor James Ladipo | @prodigy90                          ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+██████╗ ██████╗  ██████╗ ██████╗ ██╗ ██████╗██╗   ██╗ █████╗  ██████╗
+██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║██╔════╝╚██╗ ██╔╝██╔══██╗██╔═████╗
+██████╔╝██████╔╝██║   ██║██║  ██║██║██║  ███╗╚████╔╝ ╚█████╔╝██║██╔██║
+██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║██║   ██║ ╚██╔╝  ██╔══██╗████╔╝██║
+██║     ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝  ██║   ╚█████╔╝╚██████╔╝
+╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝   ╚═╝    ╚════╝  ╚═════╝
 ```
 
 <div align="center">
@@ -32,14 +26,16 @@ package main
 
 type Engineer struct {
     Name        string
+    Alias       string
     Location    string
     Role        string
     Philosophy  string
     Contact     string
 }
 
-var victor = Engineer{
-    Name:       "Victor James Ladipo",
+var prodigy = Engineer{
+    Name:       "Prodigy",
+    Alias:      "Victor James",
     Location:   "Nigeria",
     Role:       "Freelance Backend Engineer",
     Philosophy: "I will win.",
@@ -302,9 +298,9 @@ Not just a statement—a commitment to solving hard problems and building system
 [![Website](https://img.shields.io/badge/Website-wasbot.ng-1a1b27?style=for-the-badge&logo=safari&logoColor=white)](https://www.wasbot.ng)
 
 [![Twitter](https://img.shields.io/badge/@ladipov-1a1b27?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/ladipov)
-[![LinkedIn](https://img.shields.io/badge/Victor_James_Ladipo-1a1b27?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/victor-james-ladipo)
+[![LinkedIn](https://img.shields.io/badge/Prodigy-1a1b27?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/victor-james-ladipo)
 [![Instagram](https://img.shields.io/badge/@ladipovj-1a1b27?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ladipovj)
-[![YouTube](https://img.shields.io/badge/Victor_James_Ladipo-1a1b27?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/victorjamesladipo)
+[![YouTube](https://img.shields.io/badge/Prodigy-1a1b27?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/victorjamesladipo)
 
 </div>
 
