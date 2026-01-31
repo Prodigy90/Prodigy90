@@ -26,35 +26,35 @@ package main
 
 type Engineer struct {
     Name        string
-    Alias       string
     Location    string
-    Role        string
     Philosophy  string
+    Alias       string
     Contact     string
+    Role        string
 }
 
 var prodigy = Engineer{
     Name:       "Prodigy",
-    Alias:      "Victor James",
     Location:   "Nigeria",
-    Role:       "Freelance Backend Engineer",
     Philosophy: "I will win.",
+    Alias:      "Victor James",
     Contact:    "admin@wasbot.ng",
+    Role:       "Freelance Backend Engineer",
 }
 
 var stack = map[string][]string{
-    "languages": {"Go", "TypeScript", "Python", "JavaScript"},
-    "backend":   {"Gin", "Express.js", "Telegraf", "Asynq", "BullMQ"},
     "databases": {"PostgreSQL", "MySQL", "Redis", "MinIO"},
-    "devops":    {"K3s", "Docker", "Traefik", "GitHub Actions"},
+    "languages": {"Go", "TypeScript", "Python", "JavaScript"},
     "messaging": {"WhatsApp API", "Telegram Bot API", "WebSockets"},
+    "backend":   {"Gin", "Express.js", "Telegraf", "Asynq", "BullMQ"},
+    "devops":    {"K8s", "K3s", "Docker", "Traefik", "GitHub Actions"},
 }
 
 var currentFocus = []string{
-    "Serverless Pod Architectures",
-    "Multi-tenant SaaS Platforms",
     "Payment System Integration",
+    "Multi-tenant SaaS Platforms",
     "High-Availability Messaging",
+    "Serverless Pod Architectures",
 }
 ```
 
@@ -68,11 +68,11 @@ var currentFocus = []string{
 
 | Area     | Expertise                                                   |
 | -------- | ----------------------------------------------------------- |
-| Database | Query optimization, indexing strategies, connection pooling |
-| API      | Response time improvements, payload optimization, caching   |
 | Memory   | Leak detection, garbage collection tuning, profiling        |
 | Caching  | Redis strategies, cache invalidation, CDN integration       |
 | Analysis | Load testing, bottleneck identification, benchmarking       |
+| API      | Response time improvements, payload optimization, caching   |
+| Database | Query optimization, indexing strategies, connection pooling |
 
 </details>
 
@@ -82,11 +82,11 @@ var currentFocus = []string{
 
 | Area           | Expertise                                               |
 | -------------- | ------------------------------------------------------- |
-| Architecture   | Horizontal scaling, microservices, event-driven systems |
 | Load Balancing | Nginx, HAProxy, cloud load balancers                    |
 | Databases      | Sharding, replication, read replicas                    |
-| Availability   | Failover strategies, health checks, circuit breakers    |
 | Monitoring     | Grafana, Prometheus, alerting pipelines                 |
+| Availability   | Failover strategies, health checks, circuit breakers    |
+| Architecture   | Horizontal scaling, microservices, event-driven systems |
 
 </details>
 
@@ -96,10 +96,10 @@ var currentFocus = []string{
 
 | Area      | Expertise                                               |
 | --------- | ------------------------------------------------------- |
-| WhatsApp  | Business automation, bulk messaging, session management |
 | Telegram  | Bot development, webhooks, multi-tenant platforms       |
 | Real-time | WebSocket servers, message queuing, event streaming     |
 | Scale     | Rate limiting, queue processing, concurrent sessions    |
+| WhatsApp  | Business automation, bulk messaging, session management |
 
 </details>
 
@@ -109,10 +109,10 @@ var currentFocus = []string{
 
 | Area         | Expertise                                           |
 | ------------ | --------------------------------------------------- |
-| APIs         | REST design, GraphQL, authentication, rate limiting |
-| Architecture | Clean code, SOLID principles, design patterns       |
 | DevOps       | Docker, CI/CD, deployment automation                |
+| Architecture | Clean code, SOLID principles, design patterns       |
 | Security     | Input validation, encryption, secure sessions       |
+| APIs         | REST design, GraphQL, authentication, rate limiting |
 
 </details>
 
@@ -132,23 +132,26 @@ stack: [Go, TypeScript, PostgreSQL, Redis, K3s, Traefik]
 ```
 
 **Architecture:**
+
 - **Serverless WhatsApp Sessions** - Worker pods created on-demand per user
-- **K3s Cluster** - API server with RBAC manages pod lifecycle dynamically
 - **Dual-Server Setup** - App server (K3s) + Data server (PostgreSQL/Redis)
+- **K3s Cluster** - API server with RBAC manages pod lifecycle dynamically
 - **Custom whatsmeow fork** - Enhanced with status recipient support
 
 **Services:**
+
 - `wasbot-backend` - Go/Gin API + dynamic worker pods
 - `wasbot-frontend` - Next.js 16 dashboard with Better Auth
-- `webhook-router-go` - Multi-currency payment routing (Paystack/Flutterwave)
-- `affiliate-system-go` - Referral tracking with commission payouts
 - `email-service-go` - Transactional emails via SMTP/Resend
+- `affiliate-system-go` - Referral tracking with commission payouts
+- `webhook-router-go` - Multi-currency payment routing (Paystack/Flutterwave)
 
 **Features:**
-- History sync with MinIO persistence (tier-based limits)
+
 - Google Contacts OAuth integration
 - Link preview generation for messages
 - Multi-currency: NGN, USD, EUR, GBP, KES, GHS, ZAR
+- History sync with MinIO persistence (tier-based limits)
 - Subscription tiers: Trial → Basic → Premium → Enterprise
 
 ---
@@ -163,12 +166,14 @@ stack: [Node.js, TypeScript, MySQL, Redis, BullMQ, Telegraf]
 ```
 
 **Architecture:**
+
+- **Subscription-Aware** - Only runs bots with active subscriptions
 - **Bot Orchestrator** - Manages `Map<tenantId, Map<botId, TenantBot>>`
 - **Complete Tenant Isolation** - Composite PKs, tenant_id FKs on all tables
 - **MySQL-First Design** - Persistent state in DB, Redis for ephemeral cache only
-- **Subscription-Aware** - Only runs bots with active subscriptions
 
 **Features:**
+
 - Auto-accept system with configurable delays
 - Message sequences with rich media + custom buttons
 - Smart trigger router (Button → Command → Text priority)
@@ -201,8 +206,8 @@ WhatsApp Web API for Node.js
 WhatsApp Web API for Go
 
 - Code optimizations
-- Bug fixes and debugging
 - Testing and validation
+- Bug fixes and debugging
 
 </td>
 </tr>
