@@ -1,10 +1,10 @@
 ```
-██████╗ ██████╗  ██████╗ ██████╗ ██╗ ██████╗██╗   ██╗
-██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║██╔════╝╚██╗ ██╔╝
-██████╔╝██████╔╝██║   ██║██║  ██║██║██║  ███╗╚████╔╝ 
-██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║██║   ██║ ╚██╔╝  
-██║     ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝  ██║   
-╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝   ╚═╝   
+                    ██████╗ ██████╗  ██████╗ ██████╗ ██╗ ██████╗██╗   ██╗
+                    ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██║██╔════╝╚██╗ ██╔╝
+                    ██████╔╝██████╔╝██║   ██║██║  ██║██║██║  ███╗╚████╔╝
+                    ██╔═══╝ ██╔══██╗██║   ██║██║  ██║██║██║   ██║ ╚██╔╝
+                    ██║     ██║  ██║╚██████╔╝██████╔╝██║╚██████╔╝  ██║
+                    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═════╝   ╚═╝
 ```
 
 <div align="center">
@@ -66,13 +66,13 @@ var currentFocus = []string{
 <summary><b>Performance Optimization</b></summary>
 <br>
 
-| Area | Expertise |
-|------|-----------|
+| Area     | Expertise                                                   |
+| -------- | ----------------------------------------------------------- |
 | Database | Query optimization, indexing strategies, connection pooling |
-| API | Response time improvements, payload optimization, caching |
-| Memory | Leak detection, garbage collection tuning, profiling |
-| Caching | Redis strategies, cache invalidation, CDN integration |
-| Analysis | Load testing, bottleneck identification, benchmarking |
+| API      | Response time improvements, payload optimization, caching   |
+| Memory   | Leak detection, garbage collection tuning, profiling        |
+| Caching  | Redis strategies, cache invalidation, CDN integration       |
+| Analysis | Load testing, bottleneck identification, benchmarking       |
 
 </details>
 
@@ -80,13 +80,13 @@ var currentFocus = []string{
 <summary><b>System Scaling</b></summary>
 <br>
 
-| Area | Expertise |
-|------|-----------|
-| Architecture | Horizontal scaling, microservices, event-driven systems |
-| Load Balancing | Nginx, HAProxy, cloud load balancers |
-| Databases | Sharding, replication, read replicas |
-| Availability | Failover strategies, health checks, circuit breakers |
-| Monitoring | Grafana, Prometheus, alerting pipelines |
+| Area           | Expertise                                               |
+| -------------- | ------------------------------------------------------- |
+| Architecture   | Horizontal scaling, microservices, event-driven systems |
+| Load Balancing | Nginx, HAProxy, cloud load balancers                    |
+| Databases      | Sharding, replication, read replicas                    |
+| Availability   | Failover strategies, health checks, circuit breakers    |
+| Monitoring     | Grafana, Prometheus, alerting pipelines                 |
 
 </details>
 
@@ -94,12 +94,12 @@ var currentFocus = []string{
 <summary><b>Messaging Automation</b></summary>
 <br>
 
-| Area | Expertise |
-|------|-----------|
-| WhatsApp | Business automation, bulk messaging, session management |
-| Telegram | Bot development, webhooks, multi-tenant platforms |
-| Real-time | WebSocket servers, message queuing, event streaming |
-| Scale | Rate limiting, queue processing, concurrent sessions |
+| Area      | Expertise                                               |
+| --------- | ------------------------------------------------------- |
+| WhatsApp  | Business automation, bulk messaging, session management |
+| Telegram  | Bot development, webhooks, multi-tenant platforms       |
+| Real-time | WebSocket servers, message queuing, event streaming     |
+| Scale     | Rate limiting, queue processing, concurrent sessions    |
 
 </details>
 
@@ -107,12 +107,12 @@ var currentFocus = []string{
 <summary><b>Backend Development</b></summary>
 <br>
 
-| Area | Expertise |
-|------|-----------|
-| APIs | REST design, GraphQL, authentication, rate limiting |
-| Architecture | Clean code, SOLID principles, design patterns |
-| DevOps | Docker, CI/CD, deployment automation |
-| Security | Input validation, encryption, secure sessions |
+| Area         | Expertise                                           |
+| ------------ | --------------------------------------------------- |
+| APIs         | REST design, GraphQL, authentication, rate limiting |
+| Architecture | Clean code, SOLID principles, design patterns       |
+| DevOps       | Docker, CI/CD, deployment automation                |
+| Security     | Input validation, encryption, secure sessions       |
 
 </details>
 
@@ -131,6 +131,7 @@ stack: [Node.js, TypeScript, MongoDB, Redis, Docker]
 ```
 
 **Features:**
+
 - Automated contact management and bulk messaging
 - Group administration and status automation
 - Scheduled message delivery with personalization
@@ -149,6 +150,7 @@ stack: [Node.js, PostgreSQL, Redis, Docker, Kubernetes]
 ```
 
 **Architecture:**
+
 - Multi-tenant with database-per-tenant isolation
 - Horizontal scaling for bot instances
 - Webhook distribution and resource quotas
@@ -163,6 +165,7 @@ stack: [Node.js, PostgreSQL, Redis, Docker, Kubernetes]
 <td width="50%">
 
 ### [baileys](https://github.com/WhiskeySockets/Baileys)
+
 WhatsApp Web API for Node.js
 
 - Performance optimizations
@@ -173,6 +176,7 @@ WhatsApp Web API for Node.js
 <td width="50%">
 
 ### [whatsmeow](https://github.com/tulir/whatsmeow)
+
 WhatsApp Web API for Go
 
 - Code optimizations
@@ -265,13 +269,13 @@ WhatsApp Web API for Go
 
 Not just a statement—a commitment to solving hard problems and building systems that scale.
 
-| Principle | Description |
-|-----------|-------------|
-| **Optimize first, scale second** | Make it fast before making it big |
-| **Measure everything** | You can't improve what you don't measure |
-| **Pragmatic solutions** | Right tool for the job, not the newest |
-| **Ship iteratively** | Perfect is the enemy of done |
-| **Learn from failures** | Every bug is a lesson |
+| Principle                        | Description                              |
+| -------------------------------- | ---------------------------------------- |
+| **Optimize first, scale second** | Make it fast before making it big        |
+| **Measure everything**           | You can't improve what you don't measure |
+| **Pragmatic solutions**          | Right tool for the job, not the newest   |
+| **Ship iteratively**             | Perfect is the enemy of done             |
+| **Learn from failures**          | Every bug is a lesson                    |
 
 ---
 
@@ -308,13 +312,13 @@ Not just a statement—a commitment to solving hard problems and building system
 
 ## `> services --available`
 
-| Service | Description |
-|---------|-------------|
-| **Backend Development** | APIs, microservices, system architecture |
-| **Performance Consulting** | Optimization, profiling, bottleneck analysis |
-| **Scaling Solutions** | High-availability, load balancing, distributed systems |
-| **Messaging Automation** | WhatsApp/Telegram bots, real-time systems |
-| **Code Reviews** | Architecture feedback, best practices |
+| Service                    | Description                                            |
+| -------------------------- | ------------------------------------------------------ |
+| **Backend Development**    | APIs, microservices, system architecture               |
+| **Performance Consulting** | Optimization, profiling, bottleneck analysis           |
+| **Scaling Solutions**      | High-availability, load balancing, distributed systems |
+| **Messaging Automation**   | WhatsApp/Telegram bots, real-time systems              |
+| **Code Reviews**           | Architecture feedback, best practices                  |
 
 ---
 
