@@ -237,12 +237,12 @@ WhatsApp Web API for Go
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=prodigy90&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prodigy90&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="165" />
+<img src="https://github-readme-stats.vercel.app/api?username=prodigy90&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9" height="165" alt="GitHub Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prodigy90&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=6" height="165" alt="Top Languages" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=prodigy90&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=58a6ff&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" />
+<img src="https://streak-stats.demolab.com?user=prodigy90&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=58a6ff&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=prodigy90&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&row=1&column=6" />
+<img src="https://github-profile-trophy.vercel.app/?username=prodigy90&theme=darkhub&no-frame=true&no-bg=true&margin-w=4&row=1&column=6" alt="GitHub Trophies" />
 
 </div>
 
