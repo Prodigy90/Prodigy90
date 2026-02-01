@@ -39,7 +39,7 @@ var prodigy = Engineer{
     Philosophy: "I will win.",
     Alias:      "Victor James",
     Contact:    "admin@wasbot.ng",
-    Role:       "Freelance Backend Engineer",
+    Role:       "Backend Software Engineer",
 }
 
 var stack = map[string][]string{
